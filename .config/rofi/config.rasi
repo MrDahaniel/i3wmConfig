@@ -7,7 +7,7 @@
 	normal-background:               #3d3d3d;
 	normal-foreground:               #ffffff;
 	alternate-normal-foreground:     #3d3d3d;
-  alternate-normal-background:     #3d3d3d;
+    alternate-normal-background:     #3d3d3d;
 	selected-normal-background:      #77767b;
 	selected-normal-foreground:      #ffffff;
 	active-background:               #3d3d3d;
