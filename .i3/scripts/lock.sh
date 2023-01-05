@@ -46,4 +46,4 @@ i3lock \
 --time-str="%H:%M:%S"        \
 --date-str="%A, %Y-%m-%d"    \
 --greeter-text=$GREET_TEXT   \
---wrong-text=clock 
+--wrong-text=''

@@ -258,14 +258,14 @@ bindsym $mod+Ctrl+Left workspace prev
 
 # set $ws2 2:
 
-set $ws1 "   Terminals "
-set $ws2 "   Firefox "
-set $ws3 "   Code "
-set $ws4 "   Spotify "
-set $ws5 "   Steam "
-set $ws6 " ‭ﭮ  Discord "
-set $ws7 7
-set $ws8 8
+set $ws1 " 1.   Terminals "
+set $ws2 " 2.   Firefox "
+set $ws3 " 3.   Code "
+set $ws4 " 4.   Spotify "
+set $ws5 " 5.   Steam "
+set $ws6 " 6. ‭ﭮ  Discord "
+set $ws7 " 7.   Misc "
+set $ws8 " 8.   Misc "
 
 # Setting Workspace Displays
 
@@ -320,6 +320,7 @@ assign [class="discord"] $ws6
 
 # Open specific applications in floating mode
 
+for_window [class="zoom"] floating enable
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
@@ -366,7 +367,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Set shut down, restart and locking features
 
-bindsym $mod+0 mode "$mode*system"
+bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch*(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
 bindsym l exec --no-startup-id i3exit lock, mode "default"
@@ -409,7 +410,7 @@ bindsym semicolon resize grow width 5 px or 5 ppt
 
 set $lock_script /home/dnl/.i3/scripts/lock.sh
 
-bindsym $mod+Shift+x exec --no-startup-id $lock_script
+# bindsym $mod+Shift+x exec --no-startup-id $lock_script
 
 # Autostart applications
 
@@ -428,7 +429,7 @@ exec --no-startup-id clipit
 
 # exec_always --no-startup-id sbxkb
 
-exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_maia
 
 # exec --no-startup-id start_conky_green
 
